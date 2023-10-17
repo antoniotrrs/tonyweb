@@ -39,7 +39,7 @@
 
           <p class="mt-5 font-weight-regular text-black">
             Hello World ! <br>
-            This is Tony. I'm a software engineer currently doing my master degree in AI for Busines, I've been working on projects from different fields such as medicine, retail and logistic using different technologies depending on the needs of the user. Having strong knowledge in mobile development in Swift for iOS and Web development to create web systems using PHP, Laravel, SQL.
+            This is Tony. I'm a software engineer currently doing my master degree in AI for Busines, I've been working on projects from different fields such as medicine, retail and logistic using different technologies depending on the needs of the user. Having strong knowledge in mobile development coding in Swift for iOS and Web development to create web systems using PHP, Laravel, SQL.
           </p>
           <v-btn
           class="ma-2"
@@ -63,7 +63,7 @@
         <v-col cols="12">
           <h2 class="font-weight-light text-center text-h5 text-blues">Portfolio</h2>
           <h2 class="font-weight-light text-center text-h4">What I've done as BATS</h2>
-          <h2 class="font-weight-light text-center text-h5">BATS is my startup that I created in order to attend SMB and provide them digital solutions.</h2>
+          <h2 class="font-weight-light text-center text-h5">BATS is my startup that I created in order to attend SMB requirements and provide them digital solutions.</h2>
         </v-col>
       </v-row>
 
@@ -94,11 +94,12 @@
       <v-row>
         <v-col cols="12">
           <h2 class="font-weight-light text-center text-h5 text-blues">Portfolio</h2>
-          <h2 class="font-weight-light text-center text-h4">Project Owner</h2>
+          <h2 class="font-weight-light text-center text-h4">Project Owner (Web)</h2>
+          <h2 class="font-weight-light text-center text-h5">Technologies that I launched in order to offer solutions for pandemic status.</h2>
         </v-col>
       </v-row>
 
-      <v-row >
+      <v-row class="mt-15">
         <v-col cols="12" md="4" class="justify-center d-flex">
 
         <v-img
@@ -118,10 +119,10 @@
 
         </v-col>
         <v-col cols="12" md="8">
-          <p class="font-weight-regular text-h5"><a href="https://www.paraordenar.com" target="_blank">Paraordenar</a></p>
-          <p class="font-weight-light body--text">Online menu where you can receive food orders of your customers throught whatsapp. Customers can access to this menu on url or QR code</p>
-          <p class="font-weight-light body--text"> e.g. <a href="https://www.lostunos.paraordenar.com" target="_blank" >https://www.lostunos.paraordenar.com</a></p>
-          <p class="text-subtitle-2 grey--text"> Laravel, MySQL</p>
+          <p class="font-weight-regular text-h5"><a href="https://paraordenar.bats.com.mx/" target="_blank">Paraordenar</a></p>
+          <p class="font-weight-light body--text">Digital menu where you can receive food orders from your customers throught whatsapp. Customers can access to this menu with an url or QR code</p>
+          <p class="font-weight-light body--text"> e.g. <a href="https://tunos.bats.com.mx/" target="_blank" >https://www.lostunos.paraordenar.com</a></p>
+          <p class="text-subtitle-2 blue--text">Technologies: Laravel, MYSQL</p>
         </v-col>
       </v-row>
 
@@ -143,10 +144,10 @@
 
         </v-col>
         <v-col cols="12" md="8">
-          <p class="font-weight-regular text-h5"><a href="/" target="_blank">Deinvitado</a></p>
-          <p class="font-weight-light body--text">Online card for meeting that contain all information about your event like place, schedule, address, times and interested links about event.</p>
-
-          <p class="text-subtitle-2 grey--text"> Vue.js, Vuetify</p>
+          <p class="font-weight-regular text-h5"><a href="https://deinvitado.bats.com.mx/" target="_blank">Deinvitado</a></p>
+          <p class="font-weight-light body--text">Online letter for social meetings which shows all information about your event such as: place, schedule event, address, time and interested links about event.</p>
+          <p class="font-weight-light body--text"> e.g. <a href="https://andreaydaniel.bats.com.mx/" target="_blank" >https://andreaydaniel.bats.com.mx/</a></p>
+          <p class="text-subtitle-2 blue--text">Technologies: Vue.js, Vuetify</p>
         </v-col>
       </v-row>
 
