@@ -1,24 +1,18 @@
-# tony
+# Tony
 
-## Project setup
-```
-npm install
-```
+### Description
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Personal site web that describes Tony's work as Bats and some projects that he does as solutions for SMB.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Some Projects
+·OSCORP: app for ipad
+·COMEFAENL: apps for iOS and Android
+·Prepa 1 (UANL): app for Android
+·Decovaevent: e-comerce web
+·taiaho: web site company and e-comerce
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### References
+Tony [https://tony.bats.com.mx](https://tony.bats.com.mx)
+BATS [https://bats.com.mx](https://bats.com.mx)
+Tony Linkedin [https://www.linkedin.com/in/antoniotrrs/](https://www.linkedin.com/in/antoniotrrs/).
