@@ -1,21 +1,12 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib/framework';
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import '@mdi/font/css/materialdesignicons.css'
 
-Vue.use(Vuetify);
-
-export default new Vuetify({
+export default createVuetify({
   icons: {
-    iconfont: 'mdi',
-    values: {
-      account: 'mdi-account',
-      github: 'mdi-github',
-      insta: 'mdi-instagram',
-      apple: 'mdi-apple',
-      linkd: 'mdi-linkedin',
-      iphone: 'mdi-cellphone',
-      ipad: 'mdi-tablet',
-      web: 'mdi-xml',
-      shop: 'mdi-cart',
-    },
+    defaultSet: 'mdi',
+    aliases,
+    sets: { mdi },
   },
-});
+})
