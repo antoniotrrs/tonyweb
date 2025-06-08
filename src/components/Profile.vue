@@ -3,10 +3,10 @@
   
     <v-container fluid class=" position-relative">
       <v-row class="position-absolute left-0 right-0 top-mobile" style="min-height: 40rem;">
-        <v-col cols="12" md="5" style="background-color: #daeced;"></v-col>
+        <v-col cols="12" sm="5" style="background-color: #daeced;"></v-col>
       </v-row>
       <v-row class="position-absolute w-100" justify="center">
-        <v-col cols="10" md="3" class="text-center">
+        <v-col cols="10" sm="5" md="4" lg="3" class="text-center">
           <v-card class="pa-5 rounded-0 d-flex flex-column align-center" elevation="6" >
               <v-avatar size="200" class="mx-auto my-5">
                 <v-img src="img/tony_torres.jpg" alt="Antonio Torres" />
@@ -33,7 +33,7 @@
               </div>
             </v-card>
             </v-col>
-            <v-col cols="10" md="4" class="d-flex flex-column justify-center">
+            <v-col cols="10" md="5" sm="5" lg="4" class="d-flex flex-column justify-center">
               <h1 class="text-h3 font-weight-medium">{{ title }}</h1>
               <v-row class="flex-0-0 my-5">
                 <v-col cols="6">
@@ -54,11 +54,11 @@
                     variant="outlined"
                     rounded="xl"
                     block>
-                  apps
+                  Contact
                 </v-btn>
                 </v-col>
               </v-row>
-              <p class="text-body-1 mt-2">{{ description }}</p>
+              <div v-html="aboutme"></div>
           </v-col>
         </v-row>
       
@@ -75,6 +75,7 @@
 import { profileConstants } from '@/constants/theme.js'
 
 const { name , title , description , socialLinks, job } = profileConstants
+const aboutme = description.replace(/\n/g, '<br>');
 
 </script>
 <style scoped>

@@ -2,7 +2,7 @@ export const profileConstants = {
   name: 'Antonio Torres',
   job: 'iOS Developer',
   title: 'Hello World!',
-  description: 'This is Tony. I\'ve worked on a variety of technology challenges from fields such as medicine, retail and logistic. Having strong knowledge in mobile and web development using Swift, Python, PHP, Javascript, HTML5 to achieve the goals required from companies. Focused on Data Analytics and AI-driven models aim to provide Intelligent Portable Software. LET\'S WORK TOGETHER!😉',
+  description: 'I\'m a mobile developer with solid experience building iOS apps using Swift, SwiftUI, and Objective-C, plus cross-platform projects with React Native. I enjoy turning ideas into clean, user-focused apps and working across teams to make it happen. \n\nMy passion for tech led me to earn a Master\'s in AI for Business, where I explored how mobile and AI can work together. Now, I’m focused on combining both worlds to build smarter, more intuitive digital experiences.',
   socialLinks: [
     { icon: 'mdi-github', url: 'https://github.com/antoniotrrs' },
     { icon: 'mdi-linkedin', url: 'https://linkedin.com/in/antoniotrrs' },
