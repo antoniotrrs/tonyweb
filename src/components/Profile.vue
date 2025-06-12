@@ -40,8 +40,7 @@
                 <v-col cols="6" sm="4">
                   <v-btn
                 color="primary"
-                href="/doc/webcv_en.pdf"
-                target="_blank"
+                href="/about"
                 rounded="xl"
                 block>
                  Resume
