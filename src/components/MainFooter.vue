@@ -7,7 +7,7 @@
                 <h5>Antonio</h5>
                 <a href="/" class="text-decoration-none text-black" style="font-size: 14px;">Home</a><br>
                 <a href="/about" class="text-decoration-none text-black" style="font-size: 14px;">Resume</a><br>
-                <a href="/apps" class="text-decoration-none text-black" style="font-size: 14px;">Apps</a>
+                <a href="/" class="text-decoration-none text-black" style="font-size: 14px;">Apps</a>
             </v-col>
             <v-col cols="12" sm="4">
                 <h5>Contact</h5>

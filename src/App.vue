@@ -13,7 +13,8 @@
           </v-col>
           <v-col cols="6" class="d-flex justify-end align-center">
             <router-link to="/" class="mx-3 text-decoration-none text-blue-grey-darken-2" style="font-size: 14px;"> Home </router-link>
-            <router-link to="/about" class="mx-3 text-decoration-none text-blue-grey-darken-2" style="font-size: 14px;"> Projects </router-link>
+            <router-link to="/about" class="mx-3 text-decoration-none text-blue-grey-darken-2" style="font-size: 14px;"> Resume </router-link>
+            <router-link to="/" class="mx-3 text-decoration-none text-blue-grey-darken-2" style="font-size: 14px;"> Apps </router-link>
           </v-col>
         </v-row>
         

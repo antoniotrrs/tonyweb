@@ -6,6 +6,6 @@ export const profileConstants = {
   socialLinks: [
     { icon: 'mdi-github', url: 'https://github.com/antoniotrrs' },
     { icon: 'mdi-linkedin', url: 'https://linkedin.com/in/antoniotrrs' },
-    { icon: 'mdi-apple', url: 'https://twitter.com/yourusername' },
+    { icon: 'mdi-apple', url: '' },
   ],
 }
