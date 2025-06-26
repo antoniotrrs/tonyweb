@@ -84,7 +84,7 @@ const { event } = useGtag()
 
 const trackClick = (e) => {
   const id = e.currentTarget.id || 'unknown'
-  event('click', {
+  event(id, {
     event_category: 'button',
     event_label: id,
     value: 1,
