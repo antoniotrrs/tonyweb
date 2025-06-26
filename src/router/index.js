@@ -6,21 +6,35 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: { page_title: 'Tony home' }
   },
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: About
+    component: About,
+    meta: { page_title: 'Resume' }
   }
 ]
+
+
 
 const router = new createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.afterEach((to) => {
+  const { page_title } = to.meta
+  const gtag = window.gtag || undefined
+
+  if (gtag && page_title) {
+    gtag('event', 'page_view', {
+      page_title,
+      page_path: to.fullPath,
+      page_location: window.location.href
+    })
+  }
 })
 
 export default router

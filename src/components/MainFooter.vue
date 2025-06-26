@@ -5,13 +5,13 @@
         <v-row>
             <v-col cols="12" sm="4">
                 <h5>Antonio</h5>
-                <a href="/" class="text-decoration-none text-black" style="font-size: 14px;">Home</a><br>
-                <a href="/about" class="text-decoration-none text-black" style="font-size: 14px;">Resume</a><br>
-                <a href="/" class="text-decoration-none text-black" style="font-size: 14px;">Apps</a>
+                <a href="/" class="text-decoration-none text-black" @click="trackClick" id="footer_home_button" style="font-size: 14px;">Home</a><br>
+                <a href="/about" class="text-decoration-none text-black" @click="trackClick" id="footer_resume_button" style="font-size: 14px;">Resume</a><br>
+                <a href="/" class="text-decoration-none text-black" @click="trackClick" id="footer_apps_button" style="font-size: 14px;">Apps</a>
             </v-col>
             <v-col cols="12" sm="4">
                 <h5>Contact</h5>
-                <a href="mailto:hi.tonytorres@gmail.com" style="font-size: 14px; color: black; text-decoration: none;">hi.tonytorres@gmail.com</a>
+                <a href="mailto:hi.tonytorres@gmail.com" @click="trackClick" id="footer_email_button" style="font-size: 14px; color: black; text-decoration: none;">hi.tonytorres@gmail.com</a>
             </v-col>
             <v-col cols="12" sm="4">
                 <h5>Tony Online</h5>
@@ -19,9 +19,12 @@
                   v-for="link in socialLinks"
                   :key="link.icon"
                   :href="link.url"
+                  :id="'footer_'+link.id"
                   target="_blank"
                   class="mx-1"
-                  variant="plain">
+                  variant="plain"
+                  @click="trackClick"
+                  >
                     <v-icon size="large">{{ link.icon }}</v-icon>
                   </v-btn>
             </v-col>
@@ -35,5 +38,17 @@
 import { profileConstants } from '@/constants/theme.js'
 
 const { socialLinks } = profileConstants
+
+import { useGtag } from 'vue-gtag-next'
+const { event } = useGtag()
+
+const trackClick = (e) => {
+  const id = e.currentTarget.id || 'unknown'
+  event(id, {
+    event_category: 'button',
+    event_label: id,
+    value: 1,
+  })
+}
 
 </script>
