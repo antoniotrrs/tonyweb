@@ -19,16 +19,19 @@
                 color="primary"
                 width="50"
               ></v-divider>
-              <h4 class="mt-5 font-weight-regular">{{ job }}</h4>
+              <h4 class="mt-5 font-weight-regular">{{ job }} at IBM</h4>
               <h4 class="font-weight-regular">📍 Dublin, Ireland</h4>
               <div class="mt-5 mb-3">
                 <v-btn
                   v-for="link in socialLinks"
-                  :key="link.icon"
-                  :href="link.url"
-                  target="_blank"
-                  class="mx-1"
-                  variant="plain">
+                    :key="link.icon"
+                    :href="link.url"
+                    :id="'profile_'+link.id"
+                    target="_blank"
+                    class="mx-1"
+                    variant="plain"
+                    @click="trackClick"
+                    >
                     <v-icon size="large">{{ link.icon }}</v-icon>
                   </v-btn>
               </div>
@@ -42,6 +45,8 @@
                 color="primary"
                 href="/about"
                 rounded="xl"
+                @click="trackClick"
+                id="profile_resume_button"
                 block>
                  Resume
                 </v-btn>
@@ -53,6 +58,8 @@
                     target="_blank"
                     variant="outlined"
                     rounded="xl"
+                    @click="trackClick"
+                    id="profile_contact_button"
                     block>
                   Contact
                 </v-btn>
@@ -71,6 +78,20 @@ import { profileConstants } from '@/constants/theme.js'
 
 const { name , title , description , socialLinks, job } = profileConstants
 const aboutme = description.replace(/\n/g, '<br>');
+
+import { useGtag } from 'vue-gtag-next'
+const { event } = useGtag()
+
+const trackClick = (e) => {
+  const id = e.currentTarget.id || 'unknown'
+  event('click', {
+    event_category: 'button',
+    event_label: id,
+    value: 1,
+  })
+}
+
+
 
 </script>
 <style scoped>

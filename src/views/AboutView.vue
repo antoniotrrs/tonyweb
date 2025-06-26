@@ -12,6 +12,8 @@
                 href="/doc/webcv_en.pdf"
                 target="_blank"
                 rounded="xl"
+                @click="trackClick" 
+                id="resume_cv_button"
                 block>
                  Download CV
                 </v-btn></v-col>
@@ -121,3 +123,17 @@
     
   </div>
 </template>
+
+<script setup>
+import { useGtag } from 'vue-gtag-next'
+const { event } = useGtag()
+
+const trackClick = (e) => {
+  const id = e.currentTarget.id || 'unknown'
+  event('click', {
+    event_category: 'button',
+    event_label: id,
+    value: 1,
+  })
+}
+</script>

@@ -33,7 +33,8 @@ app.use(router)
 app.use(VueGtag, {
   property: {
     id: 'G-C46GHMNNV6',
-  }
+  },
+  debug: true,
 })
 
 app.mount('#app')
